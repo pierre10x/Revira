@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#123c32"><meta name="description" content="Política de Privacidade e proteção de dados (LGPD) do ReVira.">
+  <title>Política de Privacidade (LGPD) | ReVira</title>
+  <link rel="stylesheet" href="css/style.css"><script src="js/theme.js"></script><script src="js/i18n.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark">R</span><span>Re<span>Vira</span><small data-i18n="brand.tag">CUIDAR DA CIDADE É UM TRABALHO DE TODOS</small></span></a>
+  <nav>
+    <a href="index.html" data-i18n="nav.home">Início</a>
+    <a href="index.html#registrar" data-i18n="nav.report">Registrar problema</a>
+    <a href="acompanhar.html" data-i18n="nav.track">Acompanhar protocolo</a>
+    <a class="nav-admin" href="painel.html" data-i18n="nav.admin">Painel administrativo ↗</a>
+  </nav>
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" data-i18n-attr="aria-label:nav.menu">☰</button>
+</header>
+<main class="inner-page">
+  <p class="alert" role="note" data-not-pt hidden data-i18n="legal.note" style="max-width:950px;margin:0 auto 20px">Aviso: esta política está disponível somente em português.</p>
+  <div class="inner-heading">
+    <span class="eyebrow">TRANSPARÊNCIA E PROTEÇÃO DE DADOS</span>
+    <h1>Política de Privacidade</h1>
+    <p>Como o ReVira coleta, utiliza e protege as informações enviadas pelos cidadãos de Campos Belos, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).</p>
+  </div>
+
+  <article class="panel-card legal-doc">
+    <section>
+      <h2>1. Quais informações coletamos</h2>
+      <p>O registro de ocorrências no ReVira é <strong>anônimo</strong>: não solicitamos nome, CPF, telefone ou e-mail para enviar uma solicitação. Ao registrar um problema urbano, coletamos apenas:</p>
+      <ul>
+        <li><strong>Dados da ocorrência:</strong> categoria do problema, descrição da situação e endereço ou ponto de referência informado.</li>
+        <li><strong>Localização geográfica (opcional):</strong> coordenadas de latitude e longitude, somente quando você utiliza o botão de GPS ou marca um ponto no mapa.</li>
+        <li><strong>Fotografia (opcional):</strong> imagem enviada por você para ilustrar o problema no espaço público. Antes do envio, a imagem é reduzida no seu aparelho e os metadados ocultos dela (como data, modelo da câmera e localização do GPS) são removidos.</li>
+        <li><strong>Dado técnico contra abuso:</strong> para limitar envios em excesso e spam, guardamos apenas um código resumido (hash) derivado do endereço IP, por no máximo 2 dias, sem possibilidade de uso para outra finalidade. Quando a verificação “não sou um robô” (Cloudflare Turnstile) estiver ativa, esse serviço pode processar dados técnicos do navegador para distinguir pessoas de robôs.</li>
+        <li><strong>Preferências de exibição:</strong> tema (claro/escuro), cor e tamanho de texto ficam salvos exclusivamente no seu navegador (<code>localStorage</code>), sem envio a servidores.</li>
+      </ul>
+      <p class="legal-tip"><strong>Boas práticas ao registrar:</strong> evite incluir nomes de pessoas, documentos, placas de veículos ou rostos identificáveis no texto e nas fotografias.</p>
+    </section>
+
+    <section>
+      <h2>2. Para que os dados são utilizados</h2>
+      <p>As informações enviadas são tratadas exclusivamente para fins de interesse público e zeladoria urbana em <strong>Campos Belos</strong> (art. 7º, III, e art. 23 da LGPD), incluindo:</p>
+      <ul>
+        <li>Encaminhar a demanda à secretaria municipal responsável (Obras, Limpeza Urbana, Drenagem, Serviços Urbanos ou Ouvidoria);</li>
+        <li>Localizar com precisão o ponto que precisa de manutenção;</li>
+        <li>Permitir que você acompanhe o andamento pelo número de protocolo (<code>RV-...</code>).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Visibilidade pública e segurança</h2>
+      <ul>
+        <li><strong>Consulta pública por protocolo:</strong> exibe apenas o código do protocolo, a categoria, a secretaria responsável, o status atual e o histórico de etapas — <strong>não revela</strong> endereço detalhado, coordenadas, descrição ou fotos.</li>
+        <li><strong>Acesso restrito e armazenamento:</strong> os dados completos e as fotografias ficam em banco de dados e armazenamento privado (Supabase), protegidos por políticas de controle de acesso (RLS) restritas aos administradores autorizados.</li>
+        <li><strong>Sem comercialização:</strong> nenhum dado coletado é vendido, alugado ou utilizado para fins publicitários.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Retenção e direitos do titular</h2>
+      <p>Os registros são mantidos pelo período necessário para o atendimento da ocorrência, prestação de contas e histórico de manutenção urbana. Caso você tenha inserido acidentalmente algum dado pessoal na descrição ou na fotografia e deseje solicitar sua correção ou exclusão, entre em contato com a <strong>Ouvidoria / Prefeitura de Campos Belos</strong> informando o protocolo da ocorrência.</p>
+    </section>
+
+    <div class="legal-actions">
+      <a class="btn btn-primary" href="index.html#registrar">← Voltar para registrar ocorrência</a>
+    </div>
+  </article>
+</main>
+<footer>
+  <a class="brand footer-brand" href="index.html"><span class="brand-mark">R</span><span>Re<span>Vira</span><small data-i18n="brand.tag">CUIDAR DA CIDADE É UM TRABALHO DE TODOS</small></span></a>
+  <p data-i18n="footer.initiative">Uma iniciativa de participação cidadã.</p>
+  <div class="footer-links"><a href="privacidade.html" data-i18n="footer.privacy">Política de Privacidade (LGPD)</a><span>© <span id="year"></span> ReVira</span></div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('menuToggle').addEventListener('click', () => document.querySelector('nav').classList.toggle('open'));
+</script>
+</body>
+</html>
